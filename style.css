@@ -1,0 +1,196 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgb(33, 0, 62), rgb(0, 0, 0));
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: rgb(19, 3, 59);
+    
+}
+.presentación{
+    background-color: rgba(11, 202, 255, 0.794);
+    font-size: 1.3rem;
+    text-shadow: -2px 1px 2px rgba(255, 0, 0, 0.306);
+    font-weight: 500;
+  margin-left: 35%;
+  margin-top: 20px;
+  border-radius: 5px;
+    width: 530px;
+    padding: 10px;
+ justify-content: center;  
+ 
+ text-align: center ;  
+  
+    
+}
+
+.container-fluid{
+    width: 90%; /* Cambiado a 100% */
+    height: 90%;
+}
+
+i {
+    margin-left: 10px;
+}
+
+img {
+    margin-top: 2px;
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 30px;
+}
+
+nav {
+    border-radius: 5px;
+    background: linear-gradient(rgb(255, 9, 29), rgb(91, 3, 3));
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav h1 {
+    color: rgb(0, 0, 0);
+    text-shadow: -5px 5px 7px rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+a {
+    width: 200px;
+    text-align: center;
+    padding-top: 3pz;
+    background-color:rgba(0, 0, 255, 0.418) ;
+    border-radius: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(255, 246, 246);
+    font-style: italic;
+    font-family: 'Protest Revolution', sans-serif;
+    text-shadow: -5px 5px 7px rgb(0, 0, 0);
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 100, 0.272);
+    text-shadow: -5px 5px 7px rgb(0, 0, 0);
+    scale: 1.1;
+}
+
+
+
+
+   
+
+#Atardeceres h2 {
+    border-bottom: 1px double rgba(255, 255, 255, 0.474);
+    color:azure;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 1000;
+    padding-top: 4px;
+    margin-top: 6%;
+    margin-bottom: 100px;
+    height: 100px;
+    text-shadow: -5px 5px 7px rgb(140, 108, 235);
+}
+
+
+   
+
+#Atardeceres img  {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+   height: 350px;
+    border-radius: 50px;
+    border-right: 2px solid rgba(217, 255, 0, 0.562);
+    border-bottom: 10px double rgba(183, 212, 0, 0.525);
+}
+
+#Atardeceres img:hover {
+    transition: ease 0.5s;
+    transform: scale(1.1);
+    border: none;
+  
+}
+/* Estilos generales para el contenedor de la imagen */
+
+
+#paisajes h2{
+    margin-top: 10%;  
+    color:rgb(2, 252, 252);
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px double blue;
+    font-size: 3em;
+    font-weight: 1000;
+    padding-top: 4px;
+    margin-bottom: 100px;
+    height: 100px;
+    text-shadow: -5px 5px 7px rgb(64, 0, 255);
+    
+}
+#paisajes img  {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+   height: 350px;
+    border-radius: 50px;
+    border-right: 2px solid rgb(7, 246, 11);
+    border-bottom: 10px double rgb(5, 164, 0);
+}
+#paisajes img:hover{
+    transition: ease-in-out 0.2s;
+    scale:1.2;
+    border-style: none;
+}
+
+/* Estilos para el contenedor de cada imagen */
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 400px; /* Ajusta esto según la disposición de tu galería */
+    margin: 8px 0; /* Espaciado entre imágenes, ajustable según necesidad */
+}
+
+/* Estilos para las imágenes dentro de los contenedores */
+.image-container img {
+    width: 400px; /* Hace que la imagen llene el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+/* Estilos para los botones de descarga */
+.download-btn {
+    position: absolute;
+    width: 150px;
+   
+    top: 50%;
+    left: 60%;
+    transform: translate(-52%, -50%);
+    display: none; /* Oculta inicialmente el botón */
+    padding: 20px 20px;
+    background-color: rgba(0, 123, 255, 0.75); /* Fondo semi-transparente */
+    color: white;
+    text-decoration: none;
+    border: 3px inset black;
+    border-radius:50%;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/* Muestra el botón cuando el usuario se posicione sobre el contenedor de la imagen */
+.image-container:hover .download-btn {
+    display: block;
+}
+
+/* Estilo opcional para cambiar el aspecto del botón al pasar el mouse */
+.download-btn:hover {
+    background-color: rgba(0, 123, 255, 1); /* Fondo más opaco */
+}
